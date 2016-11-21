@@ -1,3 +1,3 @@
 # Calc.js
 
-Object containing function to calculate stuff
+Object containing functions to calculate stuff
