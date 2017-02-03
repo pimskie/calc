@@ -8,5 +8,9 @@ const Calc = {
 		const rand = (Math.random() * (max - min + 1)) + min;
 
 		return (round) ? ~~rand : rand;
-	}
+	},
+
+	// https://github.com/processing/p5.js
+	// https://github.com/processing/p5.js/blob/master/src/math/calculation.js#L440
+	map: (value, start1, stop1, start2, stop2) => ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2;
 }
