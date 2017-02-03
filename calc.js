@@ -12,5 +12,5 @@ const Calc = {
 
 	// https://github.com/processing/p5.js
 	// https://github.com/processing/p5.js/blob/master/src/math/calculation.js#L440
-	map: (value, start1, stop1, start2, stop2) => ((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2,
+	map: (value, start1, stop1, start2, stop2) => ((value - start1) / (stop1 - start1)) * (stop2 - start2) + start2,
 }
