@@ -1,5 +1,6 @@
 const Calc = {
 	distanceBetween: (x1, y1, x2, y2) => Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2)),
+	distanceBetweenVect: (v1, v2) => Math.sqrt((v1.x - v2.x) * (v1.x - v2.x) + (v1.y - v2.y) * (v1.y - v2.y)),
 	slope: (x1, y1, x2, y2) => (y2 - y1) / (x2 - x1),
 	angleBetween: (x1, y1, x2, y2) => Math.atan2(y2 - y1, x2 - x1),
 	angleDifference: (angleStart, angleTarget) => Math.atan2(Math.sin(angleTarget - angleStart), Math.cos(angleTarget - angleStart)),
